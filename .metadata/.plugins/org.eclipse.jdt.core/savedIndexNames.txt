@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+D:\ConveyLabOnline\EclipseWorkspaceStackJava_8\.metadata\.plugins\org.eclipse.jdt.core
+4058776821.index
+534930905.index
+2263561315.index

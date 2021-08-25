@@ -1,0 +1,22 @@
+class Product
+{
+	
+	void addProduct()
+	{
+		int productid=1001;//local variable
+		System.out.println("Your ProductId is::"+productid);
+		
+	}
+	void addCategory()
+	{
+		
+	}
+}
+public class Sample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

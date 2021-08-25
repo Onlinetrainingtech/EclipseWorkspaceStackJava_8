@@ -1,0 +1,16 @@
+
+public class Demo {
+
+	
+	void get1()
+	{
+		System.out.println("Welcome to get1 method");
+	}
+	
+	public static void main(String[] args) {
+		
+	
+
+	}
+
+}

@@ -1,0 +1,19 @@
+class Product
+{
+	void addProduct()
+	{
+		
+	}
+	void addCategory()
+	{
+		
+	}
+}
+public class Sample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

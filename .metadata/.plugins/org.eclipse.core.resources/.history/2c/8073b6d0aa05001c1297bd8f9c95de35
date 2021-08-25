@@ -1,0 +1,21 @@
+class Product
+{
+	
+	void addProduct()
+	{
+		int productid=1001;//local variable
+		
+	}
+	void addCategory()
+	{
+		
+	}
+}
+public class Sample {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
