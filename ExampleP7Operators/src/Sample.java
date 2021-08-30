@@ -23,6 +23,15 @@ class Demo
 		System.out.println("LogicalOR::"+((a2<b2)||(b2>a2)));//True
 		System.out.println("LogicalNOT::"+!(a2<b2));//False
 	}
+	void bitwiseoperator()
+	{
+		int a3=2,b3=3;
+		System.out.println("BitWiseAND::"+(a3&b3));
+		System.out.println("BitWiseOR::"+(a3|b3));
+		System.out.println("XOR is::"+(a3^b3));
+		System.out.println("leftshiftoperator::"+(b3<<1));
+		System.out.println("Rightshiftoperator::"+(b3>>1));
+	}
 	
 }
 public class Sample {
@@ -32,8 +41,8 @@ public class Sample {
 		Demo f1=new Demo();
 		//f1.arithmeticOperators();
 		//f1.comparisionOperator();
-		f1.logicalOperators();
-
+		//f1.logicalOperators();
+          f1.bitwiseoperator();
 	}
 
 }
