@@ -1,0 +1,5 @@
+
+interface ProductDAO
+{
+   void addProduct();
+}
