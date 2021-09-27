@@ -26,4 +26,7 @@
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="AdminLoginPage"/>
+<fullyQualifiedTypeName name="UserLoginPage"/>
+<fullyQualifiedTypeName name="RegisterPage"/>
 </qualifiedTypeNameHistroy>
