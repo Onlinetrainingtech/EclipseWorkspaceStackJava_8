@@ -46,17 +46,13 @@ public class MyProfilePage extends JFrame {
 		lblMyprofile.setBounds(162, 30, 46, 14);
 		contentPane.add(lblMyprofile);
 		
-		JLabel lblMyid = new JLabel("MyId");
-		lblMyid.setBounds(45, 72, 46, 14);
-		contentPane.add(lblMyid);
-		
 		textField = new JTextField();
 		textField.setBounds(144, 69, 135, 20);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		JLabel lblUsername = new JLabel("UserName");
-		lblUsername.setBounds(45, 126, 70, 14);
+		lblUsername.setBounds(48, 72, 70, 14);
 		contentPane.add(lblUsername);
 		
 		textField_1 = new JTextField();
@@ -65,7 +61,7 @@ public class MyProfilePage extends JFrame {
 		textField_1.setColumns(10);
 		
 		JLabel lblPass = new JLabel("Pass");
-		lblPass.setBounds(45, 185, 46, 14);
+		lblPass.setBounds(48, 126, 46, 14);
 		contentPane.add(lblPass);
 		
 		textField_2 = new JTextField();
@@ -73,13 +69,16 @@ public class MyProfilePage extends JFrame {
 		contentPane.add(textField_2);
 		textField_2.setColumns(10);
 		
-		JButton btnAdddetails = new JButton("AddDetails");
+		JButton btnAdddetails = new JButton("Search");
 		btnAdddetails.setBounds(95, 252, 89, 23);
 		contentPane.add(btnAdddetails);
 		
-		JButton btnSearch = new JButton("Reset");
+		JButton btnSearch = new JButton("Update");
 		btnSearch.setBounds(258, 252, 89, 23);
 		contentPane.add(btnSearch);
+		
+		JLabel lblGender = new JLabel("Gender");
+		lblGender.setBounds(48, 185, 46, 14);
+		contentPane.add(lblGender);
 	}
-
 }

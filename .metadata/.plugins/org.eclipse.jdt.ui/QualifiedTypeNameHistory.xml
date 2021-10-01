@@ -36,4 +36,5 @@
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="AdminHomePage"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="UserHomePage"/>
 </qualifiedTypeNameHistroy>

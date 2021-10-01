@@ -5,10 +5,16 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+import java.awt.event.ActionEvent;
 
 public class RegisterPage extends JFrame {
 
@@ -92,10 +98,51 @@ public class RegisterPage extends JFrame {
 		textField_3.setColumns(10);
 		
 		JButton btnRegister = new JButton("Register");
+		btnRegister.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				try
+				{
+					String u1=textField.getText();
+					String p1=textField_1.getText();
+					String g1=textField_2.getText();
+					String a1=textField_3.getText();
+					
+					String str1="insert into userreg values('"+u1+"','"+p1+"','"+g1+"','"+a1+"')";
+					
+					
+					Class.forName("org.h2.Driver");
+					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/fullstack8","sa","");
+					Statement stm=conn.createStatement();
+					
+					stm.executeUpdate(str1);
+					
+					JOptionPane.showMessageDialog(btnRegister,"LoginSucess!!!");
+					
+					
+					
+					
+					
+				}
+				catch(Exception t)
+				{
+					System.out.println(t);
+				}
+			}
+		});
 		btnRegister.setBounds(93, 321, 89, 23);
 		panel.add(btnRegister);
 		
 		JButton btnReset = new JButton("Reset");
+		btnReset.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) 
+			{
+				textField.setText(" ");
+				textField_1.setText(" ");
+				textField_2.setText(" ");
+				textField_3.setText(" ");
+			}
+		});
 		btnReset.setBounds(234, 321, 89, 23);
 		panel.add(btnReset);
 	}
