@@ -79,7 +79,7 @@ public class UserLoginPage extends JFrame {
 					String u1=textField.getText();
 					String p1=textField_1.getText();
 					
-					String str="select * from userreg";
+					String str="select * from userreg where uname='"+u1+"' and pass='"+p1+"'";
 					
 					Class.forName("org.h2.Driver");
 					Connection conn=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/fullstack8","sa","");

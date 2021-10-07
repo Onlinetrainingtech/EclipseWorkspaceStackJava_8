@@ -7,6 +7,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class MyProfilePage extends JFrame {
 
@@ -70,6 +72,11 @@ public class MyProfilePage extends JFrame {
 		textField_2.setColumns(10);
 		
 		JButton btnAdddetails = new JButton("Search");
+		btnAdddetails.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e)
+			{
+			}
+		});
 		btnAdddetails.setBounds(95, 252, 89, 23);
 		contentPane.add(btnAdddetails);
 		
